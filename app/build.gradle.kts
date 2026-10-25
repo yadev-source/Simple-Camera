@@ -98,4 +98,10 @@ dependencies {
     implementation(libs.androidx.exifinterface)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.window)
+implementation(libs.simple.tools.commons) {
+    exclude(group = "com.github.duolingo", module = "rtl-viewpager")
+}
+
+implementation("com.duolingo.open:rtl-viewpager:2.0.0")
+implementation("androidx.viewpager:viewpager:1.0.0")
 }
